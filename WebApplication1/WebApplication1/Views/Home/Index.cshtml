@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <section class="row" aria-labelledby="aspnetTitle">
+        <h1 id="title">Premium Laptop Seller</h1>
+        <p class="lead">At Digital Retailers, we are driven to provide our customers with the best possible deals on all ranges of laptops.</p>
+    </section>
+
+    <div class="row">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <h2 id="gettingStartedTitle">Gaming Laptops</h2>
+            <p>
+                Level up your gaming experience with our curated selection of high-performance gaming laptops! Dive into immersive graphics, lightning-fast processing, and portable power. Shop now for the ultimate gaming companion and redefine how you play.
+            </p>
+            <p>@Html.ActionLink("Gaming Laptops", "Index", "Gamings", new { area = "" }, new { @class = "btn btn-outline-dark" })</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="librariesTitle">
+            <h2 id="librariesTitle">Business Laptops</h2>
+            <p>Transform your workday with our curated collection of business laptops. Elevate productivity with sleek design, powerful processing, and reliable performance. Shop now for professional-grade laptops that redefine efficiency and style in the business world.</p>
+            <p>@Html.ActionLink("Business Laptops", "Index", "Businesses", new { area = "" }, new { @class = "btn btn-outline-dark" })</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h2 id="hostingTitle">Thin&Light Laptops</h2>
+            <p>Discover the perfect blend of power and portability with our selection of thin and light laptops. Streamline your lifestyle with sleek designs, feather-light construction, and impressive performance. Shop now for a laptop that effortlessly combines style and functionality, redefining the way you work and play on the go.</p>
+            <p>@Html.ActionLink("Thin&Light Laptops", "Index", "ThinLights", new { area = "" }, new { @class = "btn btn-outline-dark" })</p>
+        </section>
+    </div>
+</main>
